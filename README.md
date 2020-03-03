@@ -1,5 +1,6 @@
 # Sky
 A weather application to get the temperature and weather condition of a particular city using accuweather. A free weather api.
+Live at :https://reverent-almeida-4a95e6.netlify.com
 # How to deploy app
 Clone/Download the zipped project from https://github.com/meenachan/Sky
 
