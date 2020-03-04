@@ -39,6 +39,6 @@ console.log(loc);
          
         })
         })
-        .catch( er.innerHTML = "Please Enter a Valid City !");
+        .catch( er.innerHTML = "Something Went Wrong , Tru Again !");
     
   });
