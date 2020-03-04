@@ -39,6 +39,6 @@ console.log(loc);
          
         })
         })
-        .catch( er.innerHTML = "Something Went Wrong , Tru Again !");
+        .catch( er.innerHTML = "Something Went Wrong , Try Again !");
     
   });
