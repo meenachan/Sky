@@ -13,7 +13,7 @@ form.addEventListener("submit",e=> {
     e.preventDefault();
     let loc = abc.value;
 console.log(loc);
-        const latapi = `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&q=${loc}`;
+        const latapi = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&q=${loc}`;
         console.log(latapi); 
         fetch(latapi)
         .then(res =>{
@@ -22,7 +22,7 @@ console.log(loc);
         
         .then(res =>{
            let key = res["0"].Key;
-        const locapi =`http://dataservice.accuweather.com/forecasts/v1/daily/1day/${key}?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&details=true`;
+        const locapi =`https://dataservice.accuweather.com/forecasts/v1/daily/1day/${key}?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&details=true`;
         fetch(locapi)
         .then(respo =>{
             return respo.json();
