@@ -11,6 +11,7 @@ const tempdes = document.querySelector(".temp-des");
 
 form.addEventListener("submit",e=> {
     e.preventDefault();
+ er.textContent=" ";
     let loc = abc.value;
         const latapi = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&q=${loc}`;
  
