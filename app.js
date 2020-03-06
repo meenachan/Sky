@@ -38,6 +38,6 @@ form.addEventListener("submit",e=> {
          
         })
         })
-        .catch( er.innerHTML = "Something Went Wrong , Try Again !");
+        .catch( er.textContent = "Something Went Wrong , Try Again !");
     
   });
