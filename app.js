@@ -12,9 +12,8 @@ const tempdes = document.querySelector(".temp-des");
 form.addEventListener("submit",e=> {
     e.preventDefault();
     let loc = abc.value;
-console.log(loc);
         const latapi = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&q=${loc}`;
-        console.log(latapi); 
+ 
         fetch(latapi)
         .then(res =>{
             return res.json();
@@ -28,7 +27,7 @@ console.log(loc);
             return respo.json();
         })
         .then(respo =>{
-            console.log(respo);
+           
             const temp = respo.DailyForecasts["0"].Temperature.Minimum.Value;
             const summary = respo.DailyForecasts["0"].Day.ShortPhrase;
             console.log(temp,summary);
