@@ -30,7 +30,7 @@ form.addEventListener("submit",e=> {
            
             const temp = respo.DailyForecasts["0"].Temperature.Minimum.Value;
             const summary = respo.DailyForecasts["0"].Day.ShortPhrase;
-            console.log(temp,summary);
+           
             tempno.textContent = temp+" F";
             tempdes.textContent= summary;
             city.textContent = res["0"].EnglishName;
