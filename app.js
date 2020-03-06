@@ -8,10 +8,10 @@ const tempdes = document.querySelector(".temp-des");
   const city = document.querySelector(".city-name");
   var abc = document.getElementById("city");
 
-
+ er.textContent=" ";
 form.addEventListener("submit",e=> {
     e.preventDefault();
- er.textContent=" ";
+
     let loc = abc.value;
         const latapi = `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=LaIFm8AwisCeRGwdpD6PVGfh7ql739Ya&q=${loc}`;
  
