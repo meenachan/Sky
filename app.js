@@ -8,7 +8,6 @@ const tempdes = document.querySelector(".temp-des");
   const city = document.querySelector(".city-name");
   var abc = document.getElementById("city");
 
- er.textContent=" ";
 form.addEventListener("submit",e=> {
     e.preventDefault();
 
