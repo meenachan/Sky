@@ -9,11 +9,11 @@
 body{
     display: grid;
     grid-template-areas:
-    'header '
+    'header'
     'search'
     'temp'
     'footer';
-    grid-gap: 5px;
+    grid-gap: 10px;
     background: linear-gradient(to bottom,#0965bb 60%, #54caf1);
     height: 100vh;
     color: white;
@@ -24,12 +24,12 @@ body{
 
 }
 img{
-    /* width: 150px; */
+    width: 150px;
     height: 150px;  
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 input{
     background: none;
@@ -88,6 +88,13 @@ button:hover{
 .temp-no{
     font-size: 70px;
 }
+#message{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+   
+}
+
 
 footer{
     grid-area: footer;

@@ -77,6 +77,11 @@ button:hover{
 .temp-no{
     font-size: 70px;
 }
+#message{
+    margin: auto;
+    text-align: center;
+   
+}
 
 footer{
     grid-area: footer;
