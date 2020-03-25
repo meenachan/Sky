@@ -8,14 +8,16 @@
 }
 
 body{
-    display: grid;
+    /* display: grid;
     grid-template-areas:
-    'header header header '
-    'search search search'
-    'temp temp temp'
-    'footer footer footer';
-    grid-gap: 5px;
-    background: linear-gradient(to bottom,#0965bb 60%, #54caf1);
+    'header'
+    'search'
+    'temp'
+    'footer';
+    grid-gap: 5px; */
+    background: linear-gradient(to left,rgba(28, 167, 202, 0.836) 60%, #ffffff);
+    /* background:rgba(223, 209, 15, 0.836); */
+    /* background:  #54caf1; */
     height: 100vh;
     color: white;
     margin-top: 20px;
@@ -29,19 +31,32 @@ img{
     
 }
 input{
-    background: none;
-    border-bottom: 10px ,white;
+    background-image: url('/search-black-18dp.svg');
+    background-position: 20px 12px; 
+    background-repeat: no-repeat;
+    width: 200px;
     border-top: none;
     border-left: none;
     border-right: none;
+    border-bottom: none;
     font-size: 1rem;
-    margin-right: 20px;
-    color: white;
+    margin-right: auto;
     outline: none;
+    color: white;
+    padding: 12px 20px 12px 40px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #eb173a;
+  text-align: center;
 }
 input::placeholder{
     color: white;
 }
+input[type=text]:focus {
+    width: 100%;
+  }
 button{
     border-radius: 4px;
     font-size: 1rem;
@@ -67,20 +82,48 @@ button:hover{
     grid-area:search;
 }
 .temp{
-    padding: 50px 50px;
+    padding: 10px 10px;
     text-align: center;
     grid-area:temp;
+
+
 }
 .city-name{
     padding: 20px;
+   
 }
 .temp-no{
     font-size: 70px;
 }
 #message{
-    margin: auto;
-    text-align: left;
+    margin: 10px;
+    text-align: center;
    
+}
+.box{
+    text-align: center;
+margin-top: 30px;
+ 
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ border-radius: 10px;
+ background: linear-gradient(to bottom,#0965bb 50%, #54caf1);
+ height: 80vh;
+ width: 30vw;
+ box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+
+.anv{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
 }
 
 footer{
