@@ -39,15 +39,15 @@ window.addEventListener("load",()=>{
                             city.textContent = res.ParentCity.EnglishName;
                             er.textContent=" ";
                             
-                            changetemp.addEventListener("click",()=>{
-                                flag=0;
-                                cel =0;
-                                fah = temp;
-                                if(flag==0){
-                                    cel = Math.floor((fah-32)*5/9);
-                                    tempno.textContent=cel;
-                                }
-                            });
+//                             changetemp.addEventListener("click",()=>{
+//                                 flag=0;
+//                                 cel =0;
+//                                 fah = temp;
+//                                 if(flag==0){
+//                                     cel = Math.floor((fah-32)*5/9);
+//                                     tempno.textContent=cel;
+//                                 }
+//                             });
                         })
                     } 
                 //to catch if invalid city name is given
@@ -91,7 +91,7 @@ form.addEventListener("submit",e=> {
                             const temp1 = respo.DailyForecasts["0"].Temperature.Minimum.Value;
                             const temp2 = respo.DailyForecasts["0"].Temperature.Maximum.Value;
                             const summary = respo.DailyForecasts["0"].Day.ShortPhrase;
-                            tempno.textContent = temp2+"-"+temp1;
+                            tempno.textContent = temp2+"/"+temp1;
                             tempdes.textContent= summary;
                             city.textContent = res["0"].EnglishName;
                             er.textContent=" ";
